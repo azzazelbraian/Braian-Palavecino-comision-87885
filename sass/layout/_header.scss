@@ -1,0 +1,50 @@
+header{
+    background-color: $color_verde;
+    color: $letra_gris;
+    width: 100%;
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media(max-width:1024px){
+    header{
+        .logo{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+@media(max-width:768px){
+    header{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+@media(max-width:425px){
+    header{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+@media(max-width:375px){
+    header{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+@media(max-width:320px){
+    header{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+footer{
+    background-color: $color_verde;
+    h3{
+    color: $letra_gris;
+    font-family: "Orienta", sans-serif; 
+    }
+    .logo{
+    width: 50px;
+    height: 50px;
+    }
+}
+
+@media(max-width:1024px){
+    .logo{
+    width: 30px;
+    height: 30px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:768px){
+    footer{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    h3{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:425px){
+    footer{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    h3{
+        font-size: 8px;
+    }
+}
+
+@media(max-width:375px){
+    footer{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    h3{
+        font-size: 8px;
+    }
+}
+
+@media(max-width:320px){
+    footer{
+        .logo{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    h3{
+        font-size: 8px;
+    }
+}

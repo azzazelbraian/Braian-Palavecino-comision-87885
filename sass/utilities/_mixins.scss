@@ -1,0 +1,5 @@
+@mixin imag($altura, $base, $borde){
+    height: $altura;
+    width: $base;
+    border-radius: $borde;
+}

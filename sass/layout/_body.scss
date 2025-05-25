@@ -1,0 +1,218 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/fondo.jpg);
+    background-size: cover;
+    .principal{
+        align-content: center;
+    }
+    main{
+        flex: 1;
+        .caja1{
+            width: 100%;
+            justify-content: center;
+        }
+        h1{
+            color: $color_verde;
+            font-family: "Orienta", sans-serif;
+            text-decoration: none;
+        }
+        h2{
+            color: $color_verde;
+            font-family: "Orienta", sans-serif;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            color: $color_verde;
+            font-family: "Orienta", sans-serif;
+        }
+        img{
+            @include imag(550px, 400px, none);
+        }
+        .frente{
+            justify-items: center;
+            img{
+                @include imag(650px, 500px, none);
+            }
+        }
+        .caja{
+            display: flex;
+            gap: 100px;
+            font-size: 30px;
+        }
+        .sectionGrid{
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            grid-template-columns: 200 px 200 px;
+            grid-template-rows: repeat(7, 25px);
+            align-content: center;
+            justify-content: center;
+        }
+        .text1{
+            text-align: center;
+        }
+        .cartel{
+            align-content: center;
+        }
+        .boton{
+            background-color: black;
+            border-radius: 50px;
+        }
+    }
+}
+
+@media(max-width:1440px){
+    img{
+        @include imag(400px, 300px, none);
+    }
+    body{
+        main{
+            .frente{
+                img{
+                    @include imag(400px, 300px, none);
+                }
+            }
+            .caja{
+                font-size: 20px;
+                img{
+                    @include imag(400px, 300px, none);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    body{
+        main{
+            .frente{
+                img{
+                    @include imag(300px, 200px, none);
+                }
+            }
+            .caja{
+                font-size: 15px;
+                img{
+                    @include imag(300px, 200px, none);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    h1{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    body{
+        main{
+            .frente{
+                img{
+                    @include imag(300px, 200px, none);
+                }
+            }
+            .caja{
+                gap: 20px;
+                font-size: 10px;
+                img{
+                    @include imag(300px, 200px, none);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:425px){
+    h1{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    body{
+        main{
+            .frente{
+                img{
+                    @include imag(200px, 100px, none);
+                }
+            }
+            .caja{
+                gap: 5px;
+                font-size: 8px;
+                img{
+                    @include imag(150px, 100px, none);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:375px){
+    h1{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    body{
+        main{
+            .frente{
+                img{
+                    @include imag(200px, 100px, none);
+                }
+            }
+            .caja{
+                gap: 3px;
+                font-size: 7px;
+                img{
+                    height: 140px;
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:320px){
+    h1{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        main{
+            .frente{
+                img{
+                    @include imag(200px, 100px, none);
+                }
+            }
+            .caja{
+                gap: 3px;
+                font-size: 7px;
+                img{
+                    @include imag(140px, 90px, none);
+                }
+            }
+        }
+    }
+}
